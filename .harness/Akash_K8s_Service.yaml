@@ -15,8 +15,8 @@ service:
                   connectorRef: Akash_GitHub
                   gitFetchType: Branch
                   paths:
-                    - .harness/kubernetes/akashgheewala-quantum-bank-backend-deployment.yaml
-                    - .harness/kubernetes/akashgheewala-quantum-bank-backend-service.yaml
+                    - .harness/kubernetes/agheewala-quantum-bank-backend-deployment.yaml
+                    - .harness/kubernetes/agheewala-quantum-bank-backend-service.yaml
                   branch: main
               skipResourceVersioning: false
               enableDeclarativeRollback: false
