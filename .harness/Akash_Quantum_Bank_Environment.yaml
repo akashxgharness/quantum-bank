@@ -1,0 +1,8 @@
+environment:
+  name: Akash Quantum Bank Environment
+  identifier: Akash_Quantum_Bank_Environment
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: sandbox
+  projectIdentifier: AkashSandbox
