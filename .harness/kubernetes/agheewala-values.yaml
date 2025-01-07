@@ -1,2 +1,2 @@
 # image: hsaab/quantum-bank-backend:<+pipeline.sequenceId>
-image: hsaab/quantum-bank-backend:206
+image: agheewala/quantum-bank-backend:206
