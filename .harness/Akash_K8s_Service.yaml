@@ -1,0 +1,25 @@
+service:
+  name: Akash K8s Service
+  identifier: Akash_K8s_Service
+  serviceDefinition:
+    type: Kubernetes
+    spec:
+      manifests:
+        - manifest:
+            identifier: DeploymentManifest
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: Akash_GitHub
+                  gitFetchType: Branch
+                  paths:
+                    - .harness/kubernetes/${YOUR_NAME}-quantum-bank-backend-deployment.yaml
+                    - .harness/kubernetes/${YOUR_NAME}-quantum-bank-backend-service.yaml
+                  branch: main
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+  gitOpsEnabled: false
+  orgIdentifier: sandbox
+  projectIdentifier: AkashSandbox
